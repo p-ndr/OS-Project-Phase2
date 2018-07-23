@@ -96,16 +96,7 @@ public class Paging {
         read.nextLine();
         String ref = read.nextLine();
         String par = read.nextLine();
-
-       /* String s1 = ref;
-        Object[] obj = s1.split(" ");
-        for (int i = 0; i < obj.length; i++) {
-            if (!(obj[i] instanceof Integer)){
-                System.out.println("error");
-                return;
-            }
-        }*/
-
+        
         String s1 = ref;
         String[] arr = s1.split(" ");
         boolean isInt = isInteger(arr);
@@ -145,7 +136,6 @@ public class Paging {
                     }
                 }else {
                     if (!memory.contains(reference[i])){
-                        //int value = memory.peek();
                         if (headIndex==frame){
                             headIndex = 0;
                         }
@@ -156,8 +146,6 @@ public class Paging {
                         for (int j = 0; j < objects.length; j++) {
                             memory.add((Integer) objects[j]);
                         }
-                        //memory.remove(value);
-                        //memory.add(reference[i]);
                         pageFaults++;
                         Object[] temp = memory.toArray();
                         String s = deepToString(temp);
