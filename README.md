@@ -40,7 +40,7 @@ Each line of the output consists of three elements:
 4 [1 4 0]
 total number of page faults is 7
 ````````````
-#### Example Two Output
+#### Example Two Output:
 ````````````
 2 [2] page fault
 3 [2 3] page fault
